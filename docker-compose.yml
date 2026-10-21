@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    env_file: .env
+    volumes:
+      - hf_cache:/hf_cache          # pretrained models are downloaded once and kept here
+      - ./models:/models:ro         # optional: your own fine-tuned models (then set MODEL_*_PATH=/models/en)
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  frontend:
+    build: { context: ., dockerfile: frontend/Dockerfile }
+    depends_on: [backend]
+    ports: ["3000:80"]
+volumes:
+  hf_cache:

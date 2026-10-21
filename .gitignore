@@ -1,0 +1,11 @@
+.env
+node_modules/
+dist/
+__pycache__/
+.venv/
+*.pyc
+models/en/*
+models/hi/*
+!models/*/.gitkeep
+ml/datasets/*
+!ml/datasets/.gitkeep
