@@ -1,0 +1,18 @@
+{
+  "_note": "Publisher TYPE metadata, not a truth score. Used as one weak ranking signal among several.",
+  "reuters.com": "wire",
+  "apnews.com": "wire",
+  "ptinews.com": "wire",
+  "thehindu.com": "newspaper",
+  "indianexpress.com": "newspaper",
+  "timesofindia.indiatimes.com": "newspaper",
+  "hindustantimes.com": "newspaper",
+  "bbc.com": "broadcaster",
+  "bbc.co.uk": "broadcaster",
+  "ndtv.com": "broadcaster",
+  "altnews.in": "factchecker",
+  "boomlive.in": "factchecker",
+  "factcheck.afp.com": "factchecker",
+  "factly.in": "factchecker",
+  "pib.gov.in": "government"
+}

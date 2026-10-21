@@ -1,0 +1,11 @@
+# Environment for the scripts in ml/ (training + benchmarking). Not needed just to run the app.
+torch>=2.2
+transformers>=4.46
+datasets>=2.19
+accelerate>=0.30
+scikit-learn>=1.4
+pandas>=2.1
+datasketch>=1.6
+sentencepiece
+openpyxl
+kagglehub
